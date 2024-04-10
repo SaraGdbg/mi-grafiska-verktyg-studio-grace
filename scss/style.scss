@@ -1,0 +1,10 @@
+@import "vendor/reset";
+@import "./layout_devices/mobile";
+
+@media screen and (min-width: 744px) {
+  @import "./layout_devices/tablet";
+}
+
+@media screen and (min-width: 1440px) {
+  @import "./layout_devices/desktop";
+}
