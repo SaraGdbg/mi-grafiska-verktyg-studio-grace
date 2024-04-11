@@ -79,12 +79,58 @@ header {
 }
 
 //----------------------------------- SERVICES --------------------------------//  
+.services {
+    height: 1059px;
+    background-color: #FCD68F;
+    border-radius: 0 0 100px 0;
+    display: flex;
+    flex-direction: column;
 
-//----------------------------------- SERVICES-CIRCLES --------------------------------//
+    //-- wowza! --//
+
+    //-- juices --//
+
+    //-- SERVICES --//
+
+    .services-text {
+        height: 400px;
+        width: 375px;
+        background-color: #E8E8E8; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .services-circles {
+        width: 375px;
+        height: 705px;
+        background-color: #E8E8E8;
+        border-radius: 100px 100px 0 0;
+        
+    }
+}
+
 //----------------------------------- MIDDLE-SECTION --------------------------------//
-//----------------------------------- REVIEWS --------------------------------// 
-//----------------------------------- CONTACT --------------------------------//   
+.middle-section {
+    background-color: #E8E8E8;
+}
+
+//----------------------------------- REVIEWS --------------------------------//
+.reviews {
+    background-color: #FCD68F;
+}
+
+//----------------------------------- CONTACT --------------------------------//
+.contact {
+    background-color: #FCD68F;
+}
+
+//----------------------------------- FOOTER --------------------------------//
+footer {
+    background-color: #365243;
+}
+
 //----------------------------------- COOKIE-BAR --------------------------------//
+
 //----------------------------------- OPEN-MENU --------------------------------//
 
   
