@@ -1,18 +1,17 @@
-@import '../variables/variables';
+@import "../variables/variables";
 
 main {
     background-color: #E8E8E8;
     height: 8086px;
     width: 375px;
-
 }
 
 
 //----------------------------------- HEADER --------------------------------//
 header {
-    height: 567px;
-    width: 375px;
-    overflow: hidden;
+  height: 567px;
+  width: 375px;
+  overflow: hidden;
     .background-image {
         background-image: url("/assets/background-header/background-header.png");
         background-size: contain;
@@ -135,3 +134,12 @@ footer {
 
   
 
+  //----------------------------------- COMISSIONS --------------------------------//
+  //----------------------------------- SERVICES --------------------------------//
+  //----------------------------------- SERVICES-CIRCLES --------------------------------//
+  //----------------------------------- MIDDLE-SECTION --------------------------------//
+  //----------------------------------- REVIEWS --------------------------------//
+  //----------------------------------- CONTACT --------------------------------//
+  //----------------------------------- COOKIE-BAR --------------------------------//
+  //----------------------------------- OPEN-MENU --------------------------------//
+}
