@@ -1,46 +1,138 @@
 @import "../variables/variables";
 
 main {
-  background-color: #e8e8e8;
+    background-color: #E8E8E8;
+    height: 8086px;
+    width: 375px;
 }
+
 
 //----------------------------------- HEADER --------------------------------//
 header {
   height: 567px;
-  .background-image {
-    background-image: url("/assets/background-header/background-header.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: -505px 0;
-    height: 567px;
-    width: 1395.79px;
+  width: 375px;
+  overflow: hidden;
+    .background-image {
+        background-image: url("/assets/background-header/background-header.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: -505px 0;
+        height: 567px;
+        width: 1395.79px;
+        display: flex;
+        div {
+            width: 100vw;
+            height: 185px;
+            display: flex;
+            justify-content: center; 
+            margin-top: 59px;
+        }
+
+      .logotype-header {
+            height: 185px;
+            width: 212px;
+            top: 59px;
+         }
+       
+        .menu-closed {
+            width: 92px;
+            height: 58px;
+            top: 288px;
+            left: 206px;
+            position: absolute;
+        }
+    } 
+}    
+    
+   
+//----------------------------------- FIRST-SECTION --------------------------------// 
+.first-section {
+    height: 1072px;
+    background-color: #FCD68F;
+    border-radius: 100px 0 0 0;
+    // increase grey area between elements
+    border-top: 30px solid #E8E8E8;
+    
+}
+
+//----------------------------------- COMMISSIONS --------------------------------// 
+.commission {
+    height: 1753px;
+    background-color: #365243;
+    .background-pattern-commission {
+        background-image: url("/assets/background-pattern/boxpattern.png");
+        background-repeat: repeat;
+        background-size: 87px;
+        height: 1753px;
+        width: 375px;
+        opacity: 50%; 
+        display: flex;
+        justify-content: center;
+        .dark-green-box {
+            background-color: #365243;
+            height: 1565px;
+            width: 340px;
+            margin-top: 75px;
+        }
+    }
+}
+
+//----------------------------------- SERVICES --------------------------------//  
+.services {
+    height: 1059px;
+    background-color: #FCD68F;
+    border-radius: 0 0 100px 0;
     display: flex;
-    div {
-      width: 100vw;
-      height: 185px;
-      display: flex;
-      justify-content: center;
-      margin-top: 59px;
+    flex-direction: column;
+
+    //-- wowza! --//
+
+    //-- juices --//
+
+    //-- SERVICES --//
+
+    .services-text {
+        height: 400px;
+        width: 375px;
+        background-color: #E8E8E8; 
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    .logotype-header {
-      height: 185px;
-      width: 212px;
-      top: 59px;
+    .services-circles {
+        width: 375px;
+        height: 705px;
+        background-color: #E8E8E8;
+        border-radius: 100px 100px 0 0;
+        
     }
+}
 
-    .menu-closed {
-      width: 92px;
-      height: 58px;
-      top: 288px;
-      left: 206px;
-      position: absolute;
-    }
-  }
+//----------------------------------- MIDDLE-SECTION --------------------------------//
+.middle-section {
+    background-color: #E8E8E8;
+}
 
-  //----------------------------------- FIRST-SECTION --------------------------------//
-  .first-section {
-  }
+//----------------------------------- REVIEWS --------------------------------//
+.reviews {
+    background-color: #FCD68F;
+}
+
+//----------------------------------- CONTACT --------------------------------//
+.contact {
+    background-color: #FCD68F;
+}
+
+//----------------------------------- FOOTER --------------------------------//
+footer {
+    background-color: #365243;
+}
+
+//----------------------------------- COOKIE-BAR --------------------------------//
+
+//----------------------------------- OPEN-MENU --------------------------------//
+
+  
 
   //----------------------------------- COMISSIONS --------------------------------//
   //----------------------------------- SERVICES --------------------------------//
