@@ -1,56 +1,63 @@
-@import '../variables/variables';
+@import "../variables/variables";
+
+:root {
+  --dark-pine: #365243;
+  --mint-condition: #e8e8e8;
+  --flamingo: #f49c98;
+  --burnt-yellow: #fcd68f;
+  --salmon: #f1c2a6;
+  --onyx: #1e1e1e;
+  --green-pea: #629076;
+}
 
 main {
-    background-color: #E8E8E8;
+  background-color: #e8e8e8;
 }
 
 //----------------------------------- HEADER --------------------------------//
 header {
+  height: 567px;
+  .background-image {
+    background-image: url("/assets/background-header/background-header.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -505px 0;
     height: 567px;
-    .background-image {
-        background-image: url("/assets/background-header/background-header.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: -505px 0;
-        height: 567px;
-        width: 1395.79px;
-        display: flex;
-        div {
-            width: 100vw;
-            height: 185px;
-            display: flex;
-            justify-content: center; 
-            margin-top: 59px;
-        }
-
-      .logotype-header {
-            height: 185px;
-            width: 212px;
-            top: 59px;
-         }
-       
-        .menu-closed {
-            width: 92px;
-            height: 58px;
-            top: 288px;
-            left: 206px;
-            position: absolute;
-        }
+    width: 1395.79px;
+    display: flex;
+    div {
+      width: 100vw;
+      height: 185px;
+      display: flex;
+      justify-content: center;
+      margin-top: 59px;
     }
-   
-//----------------------------------- FIRST-SECTION --------------------------------// 
-.first-section {
 
+    .logotype-header {
+      height: 185px;
+      width: 212px;
+      top: 59px;
+    }
+
+    .menu-closed {
+      width: 92px;
+      height: 58px;
+      top: 288px;
+      left: 206px;
+      position: absolute;
+    }
+  }
+
+  //----------------------------------- FIRST-SECTION --------------------------------//
+  .first-section {
+  }
+
+  //----------------------------------- COMISSIONS --------------------------------//
+  //----------------------------------- SERVICES --------------------------------//
+  //----------------------------------- SERVICES-CIRCLES --------------------------------//
+  //----------------------------------- MIDDLE-SECTION --------------------------------//
+  //----------------------------------- REVIEWS --------------------------------//
+  //----------------------------------- CONTACT --------------------------------//
+  //----------------------------------- COOKIE-BAR --------------------------------//
+  //----------------------------------- OPEN-MENU --------------------------------//
 }
-
-//----------------------------------- COMISSIONS --------------------------------// 
-//----------------------------------- SERVICES --------------------------------//  
-//----------------------------------- SERVICES-CIRCLES --------------------------------//
-//----------------------------------- MIDDLE-SECTION --------------------------------//
-//----------------------------------- REVIEWS --------------------------------// 
-//----------------------------------- CONTACT --------------------------------//   
-//----------------------------------- COOKIE-BAR --------------------------------//
-//----------------------------------- OPEN-MENU --------------------------------//
-}
-  
-
