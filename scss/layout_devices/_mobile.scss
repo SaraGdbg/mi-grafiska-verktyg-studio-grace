@@ -79,11 +79,11 @@ header {
 
 //----------------------------------- SERVICES --------------------------------//  
 .services {
-    height: 1059px;
     background-color: #FCD68F;
     border-radius: 0 0 100px 0;
     display: flex;
     flex-direction: column;
+    
 
     //-- wowza! --//
 
@@ -91,20 +91,64 @@ header {
 
     //-- SERVICES --//
 
-    .services-text {
-        height: 400px;
+    .services-text-first-part,
+    .services-text-second-part {
         width: 375px;
-        background-color: #E8E8E8; 
-        margin-top: 20px;
-        margin-bottom: 20px;
+        background-color: var(--mint-condition); 
+        padding: 0 52px;
+        font-family: "Inter", sans-serif;
+        color: var(--dark-pine);
+        font-weight: 500;
+        align-self: center;
+        font-size: 1.125rem;
+        line-height: 1.361rem;
+    }
+
+    .services-text-first-part {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .services-text-second-part {
+        padding-bottom: 100px;
+    }
+
+    .services-curve {
+        position: relative;
+        top: -90px;
+        height: 135px;
     }
 
     .services-circles {
         width: 375px;
-        height: 705px;
-        background-color: #E8E8E8;
-        border-radius: 100px 100px 0 0;
-        
+        background-color: var(--mint-condition);
+        border-radius: 0 100px 100px 0;
+        border-right: 10px solid var(--burnt-yellow);
+        outline: 30px solid var(--burnt-yellow);
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .services-ellipse-1,
+        .services-ellipse-2,
+        .services-ellipse-3 {
+            margin: 0 43px;
+        }
+
+        .services-ellipse-1 {
+            position: relative;
+            right: 40px;
+        }
+
+        .services-ellipse-2 {
+            position: relative;
+            left: 20px;
+        }
+
+        .services-ellipse-3 {
+            position: relative;
+            right: 10px;
+        }
     }
 }
 
