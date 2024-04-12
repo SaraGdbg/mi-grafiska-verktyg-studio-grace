@@ -1,9 +1,60 @@
 @import "../variables/variables";
 
 main {
-  background-color: #e8e8e8;
+  background-color: var(--mint-condition);
   height: 8086px;
   width: 375px;
+  font-family: 'Inter', sans-serif;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: -0.8px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: var(--green-pea);
+}
+
+h3 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 20px;
+  letter-spacing: -0.8px;
+}
+
+h4, h5, h6 {
+  font: 700;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 18px;
+  letter-spacing: -0.8px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+}
+
+.quote {
+  height: auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--mint-condition);
+}
+
+.quotation-mark-left,
+.quotation-mark-right {
+  color: var(--mint-condition);
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 116px;
+  letter-spacing: -0.8px;
+  font-style: italic;
 }
 
 //----------------------------------- HEADER --------------------------------//
@@ -19,6 +70,7 @@ header {
     height: 567px;
     width: 1395.79px;
     display: flex;
+    
     div {
       width: 100vw;
       height: 185px;
@@ -44,114 +96,107 @@ header {
 }
 
 //----------------------------------- FIRST-SECTION --------------------------------//
+
 .first-section {
-    background-color: #FCD68F;
-    border-radius: 100px 0 0 0;
-    // increase grey area between elements
-    border-top: 30px solid #E8E8E8; 
-    padding-bottom: 40px; 
-    border-bottom: 10px solid rgba(255, 255, 255, 0.5);;
-   
+  background-color: var(--burnt-yellow);
+  border-radius: 100px 0 0 0;
+  // increase grey area between elements
+  border-top: 30px solid var(--mint-condition); 
+  padding-bottom: 30px; 
+  border-bottom: 10px solid rgba(255, 255, 255, 0.5);;
 
+  .fs-parent-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-top: 35px;
+  }
 
-    .fs-parent-heading {
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
-        margin-top: 35px;
-    }
-
-    .fs-first-heading {
-        width: 336px;
-        height: 281px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        border-radius: 100px 0 0 36px;
-        background-color: rgba(255, 255, 255, 0.5);;
+  .fs-first-heading {
+    width: 336px;
+    height: 281px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px 0 0 36px;
+    background-color: rgba(255, 255, 255, 0.5);;
         
+  }
+
+  h1 {
+    color: var(--green-pea);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 2.5rem;
+    letter-spacing: -0.8px;
+    width: 218px;
+    height: 162px;
+    text-align: right;
+  }  
+
+  .fs-image-couch {
+    border-radius: 0 30px 30px 0;
+    margin-top: 40px;
+
+    .soft-couch {
+      position: relative;
+      left: -40px;
+      width: 421px;
+      height: 315px;
+      border-radius: 0 30px 30px 0;
+      outline: 10px solid rgba(255, 255, 255, 0.5);
     }
 
-    h1 {
-        font-family: 'Inter';
-        color: var(--green-pea);
-        font-size: 2.5rem;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-style: italic;
-        line-height: 2.5rem;
-        letter-spacing: -0.8px;
-        width: 218px;
-        height: 162px;
-        text-align: right;
-    }  
+  }
 
-    .fs-image-couch {
-        border-radius: 0 30px 30px 0;
-        margin-top: 40px;
+  .fs-paragraph-parent {
+    margin-top: 40px;
+    display: flex;
+    justify-content: right;
+  }
 
-        .soft-couch {
-            position: relative;
-            left: -40px;
-            width: 421px;
-            height: 315px;
-            border-radius: 0 30px 30px 0;
-            outline: 10px solid rgba(255, 255, 255, 0.5);
-        }
+  .fs-paragraph {
+    width: 336px;
+    height: 326px;
+    background-color: var(--dark-pine);
+    border-radius: 36px 0 0 36px;
+    border: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 10px solid rgba(255, 255, 255, 0.5);
 
-    }
+  }
 
-    .fs-paragraph-parent {
-        margin-top: 40px;
-        display: flex;
-        justify-content: right;
-    }
-
-    .fs-paragraph {
-        width: 336px;
-        height: 326px;
-        background-color: var(--dark-pine);
-        border-radius: 36px 0 0 36px;
-        border: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: 10px solid rgba(255, 255, 255, 0.5);
-
-    }
-
-    .fs-text {
-        width: 274.82px;
-        height: 261px;
-        color: var(--mint-condition);
-        font-size: 1.125rem;
-        font-family: 'inter';
-        font-weight: 400;
-        line-height: 26px;
-        letter-spacing: -0.4px;
-    } 
+  .fs-text {
+    width: 274.82px;
+    height: 261px;
+    color: var(--mint-condition);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+  } 
 }
-
 
 //----------------------------------- COMMISSIONS --------------------------------// 
 
 .commission {
-  height: 1753px;
-  background-color: #365243;
+  background-color: var(--dark-pine);
   z-index: 1;
   .background-pattern-commission {
     background-image: url("/assets/background-pattern/boxpattern.png");
     background-repeat: repeat;
     background-size: 87px;
-    height: 1753px;
     width: 375px;
     // Kommenterat ut för att få bilderna att funka, ändra färg på mönstret istället?
     //opacity: 50%;
     display: flex;
     justify-content: center;
     .dark-green-box {
-      background-color: #365243;
+      background-color: var(--dark-pine);
       //height: 1565px;
       width: 340px;
       margin-top: 75px;
@@ -216,30 +261,15 @@ header {
         align-items: center; 
         border-radius: 36px 0 0 36px;
         
-        
         .wowza {
             width: 270px;
-            p {
-                height: auto;
-                font-family: "Inter";
-                font-size: 1.5rem;
-                font-weight: 900;
-                font-style: italic;
-                color: var(--mint-condition);
-            } 
-            .quote {
-                font-size: 6rem;
-            }
         }
     }
     
-
     //-- juices --//
     .juice-container {
         margin-top: 40px;
         
-        
-
         .juice-img-container {
             
             img {
@@ -252,8 +282,7 @@ header {
         }
   
     }
-
-
+    
   //-- SERVICES --//
   
     .services-heading {
@@ -265,18 +294,6 @@ header {
         justify-content: center; 
         align-items: center; 
         border-radius: 0 36px 100px 0;
-        
-
-        h2 {
-            font-family: "Inter";
-            font-size: 5rem;
-            font-weight: 900;
-            font-style: italic;
-            letter-spacing: -0.8px;
-            line-height: 80px;
-            text-transform: uppercase;
-            color: var(--green-pea);
-        }
     }
 
     .services-text {
@@ -346,22 +363,25 @@ header {
 
 //----------------------------------- MIDDLE-SECTION --------------------------------//
 .middle-section {
-  background-color: #e8e8e8;
+  background-color: var(--burnt-yellow);
 }
 
 //----------------------------------- REVIEWS --------------------------------//
 .reviews {
-  background-color: #fcd68f;
+  background-color: var(--burnt-yellow);
+  color: var(--mint-condition);
 }
 
 //----------------------------------- CONTACT --------------------------------//
 .contact {
-  background-color: #fcd68f;
+  background-color: var(--burnt-yellow);
+  color: var(--dark-pine);
 }
 
 //----------------------------------- FOOTER --------------------------------//
 footer {
-  background-color: #365243;
+  background-color: var(--dark-pine);
+  color: var(--mint-condition);
 }
 
 //----------------------------------- COOKIE-BAR --------------------------------//
