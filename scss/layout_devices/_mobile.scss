@@ -45,14 +45,97 @@ header {
 
 //----------------------------------- FIRST-SECTION --------------------------------//
 .first-section {
-  height: 1072px;
-  background-color: #fcd68f;
-  border-radius: 100px 0 0 0;
-  // increase grey area between elements
-  border-top: 30px solid #e8e8e8;
+    background-color: #FCD68F;
+    border-radius: 100px 0 0 0;
+    // increase grey area between elements
+    border-top: 30px solid #E8E8E8; 
+    padding-bottom: 40px; 
+    border-bottom: 10px solid rgba(255, 255, 255, 0.5);;
+   
+
+
+    .fs-parent-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin-top: 35px;
+    }
+
+    .fs-first-heading {
+        width: 336px;
+        height: 281px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 100px 0 0 36px;
+        background-color: rgba(255, 255, 255, 0.5);;
+        
+    }
+
+    h1 {
+        font-family: 'Inter';
+        color: var(--green-pea);
+        font-size: 2.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 2.5rem;
+        letter-spacing: -0.8px;
+        width: 218px;
+        height: 162px;
+        text-align: right;
+    }  
+
+    .fs-image-couch {
+        border-radius: 0 30px 30px 0;
+        margin-top: 40px;
+
+        .soft-couch {
+            position: relative;
+            left: -40px;
+            width: 421px;
+            height: 315px;
+            border-radius: 0 30px 30px 0;
+            outline: 10px solid rgba(255, 255, 255, 0.5);
+        }
+
+    }
+
+    .fs-paragraph-parent {
+        margin-top: 40px;
+        display: flex;
+        justify-content: right;
+    }
+
+    .fs-paragraph {
+        width: 336px;
+        height: 326px;
+        background-color: var(--dark-pine);
+        border-radius: 36px 0 0 36px;
+        border: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 10px solid rgba(255, 255, 255, 0.5);
+
+    }
+
+    .fs-text {
+        width: 274.82px;
+        height: 261px;
+        color: var(--mint-condition);
+        font-size: 1.125rem;
+        font-family: 'inter';
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.4px;
+    } 
 }
 
-//----------------------------------- COMMISSIONS --------------------------------//
+
+//----------------------------------- COMMISSIONS --------------------------------// 
+
 .commission {
   height: 1753px;
   background-color: #365243;
@@ -107,34 +190,158 @@ header {
     margin-top: 45px;
   }
 }
+
 //----------------------------------- SERVICES --------------------------------//
+
 .services {
-  height: 1059px;
-  background-color: #fcd68f;
-  border-radius: 0 0 100px 0;
-  display: flex;
-  flex-direction: column;
+    background-color: var(--burnt-yellow);
+    border-radius: 0 0 100px 0;
+    display: flex;
+    flex-direction: column;
 
-  //-- wowza! --//
+    .wowza-container {
+        display: flex;
+        justify-content: right;
+        border-radius: 0px, 36px, 36px, 0px;
+    }
+  
+    //-- wowza! --//
+    .wowza-p-container {
+        width: 336px;
+        background-color: var(--dark-pine);
+        margin-top: 40px;
+        outline: 10px solid rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        border-radius: 36px 0 0 36px;
+        
+        
+        .wowza {
+            width: 270px;
+            p {
+                height: auto;
+                font-family: "Inter";
+                font-size: 1.5rem;
+                font-weight: 900;
+                font-style: italic;
+                color: var(--mint-condition);
+            } 
+            .quote {
+                font-size: 6rem;
+            }
+        }
+    }
+    
 
-  //-- juices --//
+    //-- juices --//
+    .juice-container {
+        margin-top: 40px;
+        
+        
+
+        .juice-img-container {
+            
+            img {
+                position: relative;
+                left: -40px;
+                outline: 10px solid rgba(255, 255, 255, 0.5);
+                border-radius: 0 30px 30px 0;
+            }
+
+        }
+  
+    }
+
 
   //-- SERVICES --//
+  
+    .services-heading {
+        margin-top: 40px;
+        width: 335px;
+        height: 281px; 
+        background-color: rgba(255, 255, 255, 0.5);;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        border-radius: 0 36px 100px 0;
+        
 
-  .services-text {
-    height: 400px;
-    width: 375px;
-    background-color: #e8e8e8;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+        h2 {
+            font-family: "Inter";
+            font-size: 5rem;
+            font-weight: 900;
+            font-style: italic;
+            letter-spacing: -0.8px;
+            line-height: 80px;
+            text-transform: uppercase;
+            color: var(--green-pea);
+        }
+    }
 
-  .services-circles {
-    width: 375px;
-    height: 705px;
-    background-color: #e8e8e8;
-    border-radius: 100px 100px 0 0;
-  }
+    .services-text {
+        height: 400px;
+    }
+  
+    .services-text-first-part,
+    .services-text-second-part {
+        width: 375px;
+        background-color: var(--mint-condition); 
+        padding: 0 52px;
+        font-family: "Inter", sans-serif;
+        color: var(--dark-pine);
+        font-weight: 500;
+        align-self: center;
+        font-size: 1.125rem;
+        line-height: 1.361rem;
+    }
+
+    .services-text-first-part {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
+    .services-text-second-part {
+        padding-bottom: 100px;
+    }
+
+    .services-curve {
+        position: relative;
+        top: -90px;
+        height: 135px;
+    }
+
+    .services-circles {
+        width: 375px;
+        background-color: var(--mint-condition);
+        border-radius: 0 100px 100px 0;
+        border-right: 10px solid var(--burnt-yellow);
+        outline: 30px solid var(--burnt-yellow);
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .services-ellipse-1,
+        .services-ellipse-2,
+        .services-ellipse-3 {
+            margin: 0 43px;
+        }
+
+        .services-ellipse-1 {
+            position: relative;
+            right: 40px;
+        }
+
+        .services-ellipse-2 {
+            position: relative;
+            left: 20px;
+        }
+
+        .services-ellipse-3 {
+            position: relative;
+            right: 10px;
+        }
+    }
 }
 
 //----------------------------------- MIDDLE-SECTION --------------------------------//
@@ -159,13 +366,4 @@ footer {
 
 //----------------------------------- COOKIE-BAR --------------------------------//
 
-//----------------------------------- OPEN-MENU --------------------------------//
-
-//----------------------------------- COMISSIONS --------------------------------//
-//----------------------------------- SERVICES --------------------------------//
-//----------------------------------- SERVICES-CIRCLES --------------------------------//
-//----------------------------------- MIDDLE-SECTION --------------------------------//
-//----------------------------------- REVIEWS --------------------------------//
-//----------------------------------- CONTACT --------------------------------//
-//----------------------------------- COOKIE-BAR --------------------------------//
 //----------------------------------- OPEN-MENU --------------------------------//
