@@ -47,11 +47,14 @@ header {
    
 //----------------------------------- FIRST-SECTION --------------------------------// 
 .first-section {
-    height: 1072px;
     background-color: #FCD68F;
     border-radius: 100px 0 0 0;
     // increase grey area between elements
-    border-top: 30px solid #E8E8E8;   
+    border-top: 30px solid #E8E8E8; 
+    padding-bottom: 40px; 
+    border-bottom: 10px solid rgba(255, 255, 255, 0.5);;
+   
+
 
     .fs-parent-heading {
         display: flex;
@@ -68,7 +71,7 @@ header {
         align-items: center;
         background-color: white;
         border-radius: 100px 0 0 36px;
-        outline: 10px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);;
         
     }
 
