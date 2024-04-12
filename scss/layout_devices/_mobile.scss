@@ -92,9 +92,10 @@ header {
     .fs-image-couch {
         border-radius: 0 30px 30px 0;
         margin-top: 40px;
-        display: flex;
 
         .soft-couch {
+            position: relative;
+            left: -40px;
             width: 421px;
             height: 315px;
             border-radius: 0 30px 30px 0;
