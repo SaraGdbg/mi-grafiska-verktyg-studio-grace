@@ -63,14 +63,16 @@ header {
     background-size: 87px;
     height: 1753px;
     width: 375px;
-    opacity: 50%;
+    // Kommenterat ut för att få bilderna att funka, ändra färg på mönstret istället?
+    //opacity: 50%;
     display: flex;
     justify-content: center;
     .dark-green-box {
       background-color: #365243;
-      height: 1565px;
+      //height: 1565px;
       width: 340px;
       margin-top: 75px;
+      margin-bottom: 115px;
       opacity: 1;
     }
   }
@@ -100,6 +102,9 @@ header {
   .commission-img3 {
     width: 298px;
     height: 429px;
+  }
+  .show-more-btn {
+    margin-top: 45px;
   }
 }
 //----------------------------------- SERVICES --------------------------------//
