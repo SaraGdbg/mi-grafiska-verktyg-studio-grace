@@ -4,7 +4,7 @@ main {
   background-color: var(--mint-condition);
   height: 8086px;
   width: 375px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h2 {
@@ -24,7 +24,9 @@ h3 {
   letter-spacing: -0.8px;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font: 700;
   font-style: italic;
   font-size: 1.25rem;
@@ -57,6 +59,43 @@ p {
   font-style: italic;
 }
 
+button {
+  width: 129px;
+  height: 40px;
+  border-radius: 7px;
+  // Behöver border ligga på varje knapp för att kunna ändras vid klick?
+  border: 2px solid black;
+  border-bottom: 8px solid black;
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 22px;
+  text-align: center;
+}
+
+.primary-btn {
+  background-color: var(--burnt-yellow);
+}
+
+.primary-btn:hover {
+  background-color: var(--flamingo);
+}
+
+.secondary-btn {
+  background-color: var(--flamingo);
+}
+
+.secondary-btn:hover {
+  background-color: var(--salmon);
+}
+
+.disabled-btn {
+}
+
+// Till måndag: jag tror att man måste lägga till en klass i JS när knappen klickas på
+// dvs hämta knappen till JS, skriv funktion som lägger till klassen t ex primary-btn-clicked
+// med klickevent för att kunna ändra styling när den klickas på
+// Till måndag 2: Finns ingen disabledknapp?
+
 //----------------------------------- HEADER --------------------------------//
 header {
   height: 567px;
@@ -70,7 +109,7 @@ header {
     height: 567px;
     width: 1395.79px;
     display: flex;
-    
+
     div {
       width: 100vw;
       height: 185px;
@@ -101,9 +140,9 @@ header {
   background-color: var(--burnt-yellow);
   border-radius: 100px 0 0 0;
   // increase grey area between elements
-  border-top: 30px solid var(--mint-condition); 
-  padding-bottom: 30px; 
-  border-bottom: 10px solid rgba(255, 255, 255, 0.5);;
+  border-top: 30px solid var(--mint-condition);
+  padding-bottom: 30px;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.5);
 
   .fs-parent-heading {
     display: flex;
@@ -119,8 +158,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 100px 0 0 36px;
-    background-color: rgba(255, 255, 255, 0.5);;
-        
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   h1 {
@@ -134,7 +172,7 @@ header {
     width: 218px;
     height: 162px;
     text-align: right;
-  }  
+  }
 
   .fs-image-couch {
     border-radius: 0 30px 30px 0;
@@ -148,7 +186,6 @@ header {
       border-radius: 0 30px 30px 0;
       outline: 10px solid rgba(255, 255, 255, 0.5);
     }
-
   }
 
   .fs-paragraph-parent {
@@ -167,7 +204,6 @@ header {
     justify-content: center;
     align-items: center;
     outline: 10px solid rgba(255, 255, 255, 0.5);
-
   }
 
   .fs-text {
@@ -178,10 +214,10 @@ header {
     font-weight: 400;
     line-height: 26px;
     letter-spacing: -0.4px;
-  } 
+  }
 }
 
-//----------------------------------- COMMISSIONS --------------------------------// 
+//----------------------------------- COMMISSIONS --------------------------------//
 
 .commission {
   background-color: var(--dark-pine);
@@ -239,126 +275,123 @@ header {
 //----------------------------------- SERVICES --------------------------------//
 
 .services {
-    background-color: var(--burnt-yellow);
-    border-radius: 0 0 100px 0;
+  background-color: var(--burnt-yellow);
+  border-radius: 0 0 100px 0;
+  display: flex;
+  flex-direction: column;
+
+  .wowza-container {
+    display: flex;
+    justify-content: right;
+    border-radius: 0px, 36px, 36px, 0px;
+  }
+
+  //-- wowza! --//
+  .wowza-p-container {
+    width: 336px;
+    background-color: var(--dark-pine);
+    margin-top: 40px;
+    outline: 10px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px 0 0 36px;
+
+    .wowza {
+      width: 270px;
+    }
+  }
+
+  //-- juices --//
+  .juice-container {
+    margin-top: 40px;
+
+    .juice-img-container {
+      img {
+        position: relative;
+        left: -40px;
+        outline: 10px solid rgba(255, 255, 255, 0.5);
+        border-radius: 0 30px 30px 0;
+      }
+    }
+  }
+
+  //-- SERVICES --//
+
+  .services-heading {
+    margin-top: 40px;
+    width: 335px;
+    height: 281px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 36px 100px 0;
+  }
+
+  .services-text {
+    height: 400px;
+  }
+
+  .services-text-first-part,
+  .services-text-second-part {
+    width: 375px;
+    background-color: var(--mint-condition);
+    padding: 0 52px;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-pine);
+    font-weight: 500;
+    align-self: center;
+    font-size: 1.125rem;
+    line-height: 1.361rem;
+  }
+
+  .services-text-first-part {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .services-text-second-part {
+    padding-bottom: 100px;
+  }
+
+  .services-curve {
+    position: relative;
+    top: -90px;
+    height: 135px;
+  }
+
+  .services-circles {
+    width: 375px;
+    background-color: var(--mint-condition);
+    border-radius: 0 100px 100px 0;
+    border-right: 10px solid var(--burnt-yellow);
+    outline: 30px solid var(--burnt-yellow);
+    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
-
-    .wowza-container {
-        display: flex;
-        justify-content: right;
-        border-radius: 0px, 36px, 36px, 0px;
-    }
-  
-    //-- wowza! --//
-    .wowza-p-container {
-        width: 336px;
-        background-color: var(--dark-pine);
-        margin-top: 40px;
-        outline: 10px solid rgba(255, 255, 255, 0.5);
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        border-radius: 36px 0 0 36px;
-        
-        .wowza {
-            width: 270px;
-        }
-    }
-    
-    //-- juices --//
-    .juice-container {
-        margin-top: 40px;
-        
-        .juice-img-container {
-            
-            img {
-                position: relative;
-                left: -40px;
-                outline: 10px solid rgba(255, 255, 255, 0.5);
-                border-radius: 0 30px 30px 0;
-            }
-
-        }
-  
-    }
-    
-  //-- SERVICES --//
-  
-    .services-heading {
-        margin-top: 40px;
-        width: 335px;
-        height: 281px; 
-        background-color: rgba(255, 255, 255, 0.5);;
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        border-radius: 0 36px 100px 0;
+    gap: 50px;
+    .services-ellipse-1,
+    .services-ellipse-2,
+    .services-ellipse-3 {
+      margin: 0 43px;
     }
 
-    .services-text {
-        height: 400px;
-    }
-  
-    .services-text-first-part,
-    .services-text-second-part {
-        width: 375px;
-        background-color: var(--mint-condition); 
-        padding: 0 52px;
-        font-family: "Inter", sans-serif;
-        color: var(--dark-pine);
-        font-weight: 500;
-        align-self: center;
-        font-size: 1.125rem;
-        line-height: 1.361rem;
+    .services-ellipse-1 {
+      position: relative;
+      right: 40px;
     }
 
-    .services-text-first-part {
-        padding-top: 80px;
-        padding-bottom: 30px;
+    .services-ellipse-2 {
+      position: relative;
+      left: 20px;
     }
 
-    .services-text-second-part {
-        padding-bottom: 100px;
+    .services-ellipse-3 {
+      position: relative;
+      right: 10px;
     }
-
-    .services-curve {
-        position: relative;
-        top: -90px;
-        height: 135px;
-    }
-
-    .services-circles {
-        width: 375px;
-        background-color: var(--mint-condition);
-        border-radius: 0 100px 100px 0;
-        border-right: 10px solid var(--burnt-yellow);
-        outline: 30px solid var(--burnt-yellow);
-        padding-bottom: 90px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        .services-ellipse-1,
-        .services-ellipse-2,
-        .services-ellipse-3 {
-            margin: 0 43px;
-        }
-
-        .services-ellipse-1 {
-            position: relative;
-            right: 40px;
-        }
-
-        .services-ellipse-2 {
-            position: relative;
-            left: 20px;
-        }
-
-        .services-ellipse-3 {
-            position: relative;
-            right: 10px;
-        }
-    }
+  }
 }
 
 //----------------------------------- MIDDLE-SECTION --------------------------------//
