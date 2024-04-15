@@ -238,42 +238,54 @@ header {
     justify-content: center;
     .dark-green-box {
       background-color: var(--dark-pine);
-      //height: 1565px;
       width: 340px;
+      height: 1565px;
       margin-top: 75px;
-      margin-bottom: 115px;
+      margin-bottom: 120px;
       opacity: 1;
     }
   }
 }
+
 .commissions-content {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 108px;
+  margin-top: 77px;
   // Funkar inte!
   opacity: 1 !important;
-  z-index: 2;
-  img {
-    // Funkar inte!
-    opacity: 1 !important;
+  //z-index: 2;
+  .commissions-heading {
+    position: relative;
+    bottom: 42px;
+    z-index: 1;
+    left: -23px;
   }
-  .commission-img1 {
-    width: 300px;
-    height: 493px;
-    margin-bottom: 20px;
-  }
-  .commission-img2 {
-    width: 300px;
-    height: 450px;
-    margin-bottom: 20px;
-  }
-  .commission-img3 {
-    width: 298px;
-    height: 429px;
+  .commissions-imgs {
+    img {
+      // Funkar inte!
+      //opacity: 1 !important;
+      position: relative;
+      bottom: 205px;
+    }
+    .commission-img1 {
+      height: 493px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .commission-img2 {
+      width: 300px;
+      height: 450px;
+      margin-bottom: 20px;
+    }
+    .commission-img3 {
+      width: 298px;
+      height: 429px;
+    }
   }
   .show-more-btn {
-    margin-top: 45px;
+    position: relative;
+    bottom: 135px;
   }
 }
 
