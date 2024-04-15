@@ -3,8 +3,8 @@
 main {
   background-color: var(--mint-condition);
   height: 8086px;
-  width: 375px;
-  font-family: 'Inter', sans-serif;
+  width: 100vw;
+  font-family: "Inter", sans-serif;
 }
 
 h2 {
@@ -24,7 +24,9 @@ h3 {
   letter-spacing: -0.8px;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font: 700;
   font-style: italic;
   font-size: 1.25rem;
@@ -57,10 +59,52 @@ p {
   font-style: italic;
 }
 
+button {
+  color: var(--onyx);
+  width: 129px;
+  height: 40px;
+  border-radius: 7px;
+  border: 2px solid var(--onyx);
+  box-shadow: 0 5px var(--onyx);
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 22px;
+  text-align: center;
+}
+
+.primary-btn {
+  background-color: var(--burnt-yellow);
+}
+
+.primary-btn:hover {
+  background-color: var(--flamingo);
+}
+
+.secondary-btn {
+  background-color: var(--flamingo);
+}
+
+.secondary-btn:hover {
+  background-color: var(--salmon);
+}
+
+.clicked-primary-btn {
+  // Or try box-shadow: none, if needed
+  box-shadow: 0 0 var(--onyx);
+}
+
+.clicked-secondary-btn {
+  box-shadow: 0 0 var(--onyx);
+}
+
+// Till måndag: jag tror att man måste lägga till en klass i JS när knappen klickas på
+// dvs hämta knappen till JS, skriv funktion som lägger till klassen t ex primary-btn-clicked
+// med klickevent för att kunna ändra styling när den klickas på
+
 //----------------------------------- HEADER --------------------------------//
 header {
   height: 567px;
-  width: 375px;
+  width: 100vw;
   overflow: hidden;
   .background-image {
     background-image: url("/assets/background-header/background-header.png");
@@ -70,7 +114,7 @@ header {
     height: 567px;
     width: 1395.79px;
     display: flex;
-    
+
     div {
       width: 100vw;
       height: 185px;
@@ -96,14 +140,52 @@ header {
 }
 
 //----------------------------------- FIRST-SECTION --------------------------------//
+.sf-curves-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  align-items: end;
+}
+.fs-curve {
+  position: relative;
+  bottom: 102px;
+  z-index: 1;
+  margin-left: 0;
+}
+
+.fs-curve-light {
+  position: relative;
+  bottom: 203.5px;
+  z-index: 2;
+  margin-right: 0;
+}
+
+.arrow-1-container {
+  width: 62vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  align-items: start;
+  position: relative;
+  bottom: 285px;
+  max-width: 330px;
+  
+  .arrow-1 {
+    width: 100%;
+    max-height: 118px;
+  }
+}
 
 .first-section {
+  height: 1115px;
   background-color: var(--burnt-yellow);
   border-radius: 100px 0 0 0;
   // increase grey area between elements
-  border-top: 30px solid var(--mint-condition); 
-  padding-bottom: 30px; 
-  border-bottom: 10px solid rgba(255, 255, 255, 0.5);;
+  border-top: 30px solid var(--mint-condition);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  bottom: 387.5px;
 
   .fs-parent-heading {
     display: flex;
@@ -119,8 +201,7 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 100px 0 0 36px;
-    background-color: rgba(255, 255, 255, 0.5);;
-        
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
   h1 {
@@ -134,11 +215,25 @@ header {
     width: 218px;
     height: 162px;
     text-align: right;
-  }  
+  }
+
+  .arrow-2-container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    bottom: 85px;
+    left: -13px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
 
   .fs-image-couch {
     border-radius: 0 30px 30px 0;
     margin-top: 40px;
+    position: relative;
+    bottom: 530px;
+    
 
     .soft-couch {
       position: relative;
@@ -148,13 +243,14 @@ header {
       border-radius: 0 30px 30px 0;
       outline: 10px solid rgba(255, 255, 255, 0.5);
     }
-
   }
 
   .fs-paragraph-parent {
     margin-top: 40px;
     display: flex;
     justify-content: right;
+    position: relative;
+    bottom: 530px;
   }
 
   .fs-paragraph {
@@ -167,7 +263,6 @@ header {
     justify-content: center;
     align-items: center;
     outline: 10px solid rgba(255, 255, 255, 0.5);
-
   }
 
   .fs-text {
@@ -178,187 +273,247 @@ header {
     font-weight: 400;
     line-height: 26px;
     letter-spacing: -0.4px;
-  } 
+  }
 }
 
-//----------------------------------- COMMISSIONS --------------------------------// 
+//----------------------------------- COMMISSIONS --------------------------------//
 
 .commission {
   background-color: var(--dark-pine);
   z-index: 1;
+  position: relative;
+  bottom: 387.5px;
+
   .background-pattern-commission {
     background-image: url("/assets/background-pattern/boxpattern.png");
     background-repeat: repeat;
     background-size: 87px;
-    width: 375px;
+    width: 100vw;
     // Kommenterat ut för att få bilderna att funka, ändra färg på mönstret istället?
     //opacity: 50%;
     display: flex;
     justify-content: center;
     .dark-green-box {
       background-color: var(--dark-pine);
-      //height: 1565px;
-      width: 340px;
+      width: 90.7vw;
+      max-width: 578px;
+      height: 1565px;
       margin-top: 75px;
-      margin-bottom: 115px;
+      margin-bottom: 120px;
       opacity: 1;
     }
   }
 }
+
 .commissions-content {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 108px;
+  margin-top: 77px;
   // Funkar inte!
   opacity: 1 !important;
-  z-index: 2;
-  img {
-    // Funkar inte!
-    opacity: 1 !important;
+  //z-index: 2;
+  .commissions-heading {
+    position: relative;
+    bottom: 42px;
+    z-index: 1;
+    left: -23px;
   }
-  .commission-img1 {
-    width: 300px;
-    height: 493px;
-    margin-bottom: 20px;
+  .commissions-imgs {
+    img {
+      // Funkar inte!
+      //opacity: 1 !important;
+      position: relative;
+      bottom: 205px;
+    }
+    .commission-img1 {
+      height: 493px;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .tape-1 {
+      width: 114px;
+      height: 28px;
+      background-color: var(--flamingo);
+      z-index: 3;
+      position: relative;
+      top: -248px;
+      left: -16px;
+    }
+    .tape-2 {
+      width: 57px;
+      height: 25px;
+      background-color: var(--dark-pine);
+      z-index: 3;
+      position: relative;
+      bottom: 220px;
+      left: 250px;
+    }
+    .commission-img2 {
+      width: 300px;
+      height: 450px;
+      position: relative;
+      bottom: 260px;
+    }
+    .commission-img3 {
+      width: 298px;
+      height: 429px;
+      position: relative;
+      bottom: 242px;
+    }
+    .tape-3 {
+      width: 114px;
+      height: 28px;
+      background-color: var(--flamingo);
+      z-index: 3;
+      position: relative;
+      bottom: 255px;
+      left: 92px
+    }
   }
-  .commission-img2 {
-    width: 300px;
-    height: 450px;
-    margin-bottom: 20px;
-  }
-  .commission-img3 {
-    width: 298px;
-    height: 429px;
-  }
+
   .show-more-btn {
-    margin-top: 45px;
+    position: relative;
+    bottom: 195px;
+  }
+
+  .arrow-3-container{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 306px;
+    align-items: end;
   }
 }
+
+
 
 //----------------------------------- SERVICES --------------------------------//
 
 .services {
-    background-color: var(--burnt-yellow);
-    border-radius: 0 0 100px 0;
+  background-color: var(--burnt-yellow);
+  border-radius: 0 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 387.5px;
+  border-top: 10px solid rgba(255, 255, 255, 0.5);
+
+  .wowza-container {
+    display: flex;
+    justify-content: right;
+    border-radius: 0px, 36px, 36px, 0px;
+  }
+
+  //-- wowza! --//
+  .wowza-p-container {
+    width: 336px;
+    background-color: var(--dark-pine);
+    margin-top: 40px;
+    outline: 10px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px 0 0 36px;
+
+    .wowza {
+      width: 270px;
+    }
+  }
+
+  //-- juices --//
+  .juice-container {
+    margin-top: 40px;
+
+    .juice-img-container {
+      img {
+        position: relative;
+        left: -40px;
+        outline: 10px solid rgba(255, 255, 255, 0.5);
+        border-radius: 0 30px 30px 0;
+      }
+    }
+  }
+
+  //-- SERVICES --//
+
+  .services-heading {
+    margin-top: 40px;
+    width: 335px;
+    height: 281px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 36px 100px 0;
+  }
+
+  .services-text {
+    height: 400px;
+  }
+
+  .services-text-first-part,
+  .services-text-second-part {
+    width: 375px;
+    background-color: var(--mint-condition);
+    padding: 0 52px;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-pine);
+    font-weight: 500;
+    align-self: center;
+    font-size: 1.125rem;
+    line-height: 1.361rem;
+  }
+
+  .services-text-first-part {
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  .services-text-second-part {
+    padding-bottom: 100px;
+  }
+
+  .services-curve {
+    position: relative;
+    top: -90px;
+    height: 135px;
+  }
+
+  .services-circles {
+    width: 375px;
+    background-color: var(--mint-condition);
+    border-radius: 0 100px 100px 0;
+    border-right: 10px solid var(--burnt-yellow);
+    outline: 30px solid var(--burnt-yellow);
+    padding-bottom: 90px;
     display: flex;
     flex-direction: column;
-
-    .wowza-container {
-        display: flex;
-        justify-content: right;
-        border-radius: 0px, 36px, 36px, 0px;
-    }
-  
-    //-- wowza! --//
-    .wowza-p-container {
-        width: 336px;
-        background-color: var(--dark-pine);
-        margin-top: 40px;
-        outline: 10px solid rgba(255, 255, 255, 0.5);
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        border-radius: 36px 0 0 36px;
-        
-        .wowza {
-            width: 270px;
-        }
-    }
-    
-    //-- juices --//
-    .juice-container {
-        margin-top: 40px;
-        
-        .juice-img-container {
-            
-            img {
-                position: relative;
-                left: -40px;
-                outline: 10px solid rgba(255, 255, 255, 0.5);
-                border-radius: 0 30px 30px 0;
-            }
-
-        }
-  
-    }
-    
-  //-- SERVICES --//
-  
-    .services-heading {
-        margin-top: 40px;
-        width: 335px;
-        height: 281px; 
-        background-color: rgba(255, 255, 255, 0.5);;
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        border-radius: 0 36px 100px 0;
+    gap: 50px;
+    .services-ellipse-1,
+    .services-ellipse-2,
+    .services-ellipse-3 {
+      margin: 0 43px;
     }
 
-    .services-text {
-        height: 400px;
-    }
-  
-    .services-text-first-part,
-    .services-text-second-part {
-        width: 375px;
-        background-color: var(--mint-condition); 
-        padding: 0 52px;
-        font-family: "Inter", sans-serif;
-        color: var(--dark-pine);
-        font-weight: 500;
-        align-self: center;
-        font-size: 1.125rem;
-        line-height: 1.361rem;
+    .services-ellipse-1 {
+      position: relative;
+      right: 40px;
     }
 
-    .services-text-first-part {
-        padding-top: 80px;
-        padding-bottom: 30px;
+    .services-ellipse-2 {
+      position: relative;
+      left: 20px;
     }
 
-    .services-text-second-part {
-        padding-bottom: 100px;
+    .services-ellipse-3 {
+      position: relative;
+      right: 10px;
     }
-
-    .services-curve {
-        position: relative;
-        top: -90px;
-        height: 135px;
-    }
-
-    .services-circles {
-        width: 375px;
-        background-color: var(--mint-condition);
-        border-radius: 0 100px 100px 0;
-        border-right: 10px solid var(--burnt-yellow);
-        outline: 30px solid var(--burnt-yellow);
-        padding-bottom: 90px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        .services-ellipse-1,
-        .services-ellipse-2,
-        .services-ellipse-3 {
-            margin: 0 43px;
-        }
-
-        .services-ellipse-1 {
-            position: relative;
-            right: 40px;
-        }
-
-        .services-ellipse-2 {
-            position: relative;
-            left: 20px;
-        }
-
-        .services-ellipse-3 {
-            position: relative;
-            right: 10px;
-        }
-    }
+  }
 }
 
 //----------------------------------- MIDDLE-SECTION --------------------------------//
