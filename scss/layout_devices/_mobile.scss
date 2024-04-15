@@ -141,6 +141,20 @@ header {
 
 //----------------------------------- FIRST-SECTION --------------------------------//
 
+.fs-curve {
+  position: relative;
+  right: -221px;
+  bottom: 102px;
+  z-index: 1;
+}
+
+.fs-curve-light {
+  position: relative;
+  right: -200px;
+  bottom: 203.5px;
+  z-index: 2;
+}
+
 .first-section {
   background-color: var(--burnt-yellow);
   border-radius: 100px 0 0 0;
@@ -148,6 +162,8 @@ header {
   border-top: 30px solid var(--mint-condition);
   padding-bottom: 30px;
   border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  bottom: 269px;
 
   .fs-parent-heading {
     display: flex;
