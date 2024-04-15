@@ -88,9 +88,6 @@ button {
   background-color: var(--salmon);
 }
 
-.disabled-btn {
-}
-
 // Till måndag: jag tror att man måste lägga till en klass i JS när knappen klickas på
 // dvs hämta knappen till JS, skriv funktion som lägger till klassen t ex primary-btn-clicked
 // med klickevent för att kunna ändra styling när den klickas på
