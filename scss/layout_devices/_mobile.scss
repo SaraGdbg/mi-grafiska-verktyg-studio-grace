@@ -3,7 +3,7 @@
 main {
   background-color: var(--mint-condition);
   height: 8086px;
-  width: 375px;
+  width: 100vw;
   font-family: "Inter", sans-serif;
 }
 
@@ -104,7 +104,7 @@ button {
 //----------------------------------- HEADER --------------------------------//
 header {
   height: 567px;
-  width: 375px;
+  width: 100vw;
   overflow: hidden;
   .background-image {
     background-image: url("/assets/background-header/background-header.png");
