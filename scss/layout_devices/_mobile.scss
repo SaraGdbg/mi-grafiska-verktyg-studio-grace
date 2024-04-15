@@ -140,19 +140,26 @@ header {
 }
 
 //----------------------------------- FIRST-SECTION --------------------------------//
-
+.sf-curves-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  align-items: end;
+}
 .fs-curve {
   position: relative;
-  right: -221px;
   bottom: 102px;
   z-index: 1;
+  margin-left: 0;
 }
 
 .fs-curve-light {
   position: relative;
-  right: -200px;
   bottom: 203.5px;
   z-index: 2;
+  margin-right: 0;
+  
 }
 
 .first-section {
