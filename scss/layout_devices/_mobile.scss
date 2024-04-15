@@ -159,18 +159,33 @@ header {
   bottom: 203.5px;
   z-index: 2;
   margin-right: 0;
+}
+
+.arrow-1-container {
+  width: 62vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  align-items: start;
+  position: relative;
+  bottom: 285px;
+  max-width: 330px;
   
+  .arrow-1 {
+    width: 100%;
+    max-height: 118px;
+  }
 }
 
 .first-section {
+  height: 1115px;
   background-color: var(--burnt-yellow);
   border-radius: 100px 0 0 0;
   // increase grey area between elements
   border-top: 30px solid var(--mint-condition);
-  padding-bottom: 30px;
   border-bottom: 10px solid rgba(255, 255, 255, 0.5);
   position: relative;
-  bottom: 269px;
+  bottom: 387.5px;
 
   .fs-parent-heading {
     display: flex;
@@ -202,9 +217,23 @@ header {
     text-align: right;
   }
 
+  .arrow-2-container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    bottom: 85px;
+    left: -13px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
   .fs-image-couch {
     border-radius: 0 30px 30px 0;
     margin-top: 40px;
+    position: relative;
+    bottom: 530px;
+    
 
     .soft-couch {
       position: relative;
@@ -220,6 +249,8 @@ header {
     margin-top: 40px;
     display: flex;
     justify-content: right;
+    position: relative;
+    bottom: 530px;
   }
 
   .fs-paragraph {
@@ -250,6 +281,9 @@ header {
 .commission {
   background-color: var(--dark-pine);
   z-index: 1;
+  position: relative;
+  bottom: 387.5px;
+
   .background-pattern-commission {
     background-image: url("/assets/background-pattern/boxpattern.png");
     background-repeat: repeat;
