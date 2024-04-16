@@ -663,11 +663,23 @@ header {
     .services-bottom-curve {
       position: relative;
       top: -1079px;
-      left: -7px;
+      left: -29px;
       margin-left: 0;
       transform: rotate(180deg);
     }
   }
+}
+
+.arrow-5-container {
+  width: 100%;
+  position: relative;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 1675px;
+  left: -10px;
+  max-width: 375px;
 }
 
 //----------------------------------- REVIEWS --------------------------------//
@@ -678,7 +690,7 @@ header {
   padding-bottom: 70px;
   border-bottom: 50px solid rgba(255, 255, 255, 0.5);
   position: relative;
-  bottom: 1530px;
+  bottom: 1775px;
 
   .first-review-container,
   .second-review-container {
