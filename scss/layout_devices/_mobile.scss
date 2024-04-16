@@ -405,7 +405,6 @@ header {
   .wowza-container {
     display: flex;
     justify-content: right;
-    border-radius: 0px, 36px, 36px, 0px;
   }
 
   //-- wowza! --//
@@ -516,15 +515,56 @@ header {
   }
 }
 
-//----------------------------------- MIDDLE-SECTION --------------------------------//
-.middle-section {
-  background-color: var(--burnt-yellow);
-}
-
 //----------------------------------- REVIEWS --------------------------------//
 .reviews {
   background-color: var(--burnt-yellow);
   color: var(--mint-condition);
+  padding-bottom: 70px;
+  border-bottom: 50px solid rgba(255, 255, 255, 0.5);
+
+  .first-review-container,
+  .second-review-container {
+    display: flex;
+  }
+
+  .first-review-container {
+    height: 292px;
+    justify-content: right;
+
+    .first-review-p-container {
+      width: 336px;
+      background-color: var(--dark-pine);
+      margin-top: 40px;
+      outline: 10px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 36px 0 0 36px;
+    }
+
+    p {
+      
+    }
+  }
+
+  .second-review-container {
+    height: 383px;
+    justify-content: left;
+
+    .second-review-p-container {
+      width: 336px;
+      background-color: var(--dark-pine);
+      margin-top: 40px;
+      outline: 10px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 36px 36px 0;
+    }
+  }
+
+  
+
 }
 
 //----------------------------------- CONTACT --------------------------------//
