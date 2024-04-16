@@ -47,12 +47,14 @@ p {
   font-weight: 900;
   font-style: italic;
   color: var(--mint-condition);
+  letter-spacing: -0.8px;
+  line-height: 32px;
 }
 
 .quotation-mark-left,
 .quotation-mark-right {
   color: var(--mint-condition);
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 116px;
   letter-spacing: -0.8px;
@@ -170,7 +172,7 @@ header {
   position: relative;
   bottom: 285px;
   max-width: 330px;
-  
+
   .arrow-1 {
     width: 100%;
     max-height: 118px;
@@ -233,7 +235,6 @@ header {
     margin-top: 40px;
     position: relative;
     bottom: 530px;
-    
 
     .soft-couch {
       position: relative;
@@ -368,7 +369,7 @@ header {
       z-index: 3;
       position: relative;
       bottom: 255px;
-      left: 92px
+      left: 92px;
     }
   }
 
@@ -377,7 +378,7 @@ header {
     bottom: 195px;
   }
 
-  .arrow-3-container{
+  .arrow-3-container {
     width: 100%;
     position: relative;
     z-index: 2;
@@ -385,11 +386,9 @@ header {
     flex-direction: column;
     align-items: center;
     bottom: 306px;
-    align-items: end;
+    left: 4px;
   }
 }
-
-
 
 //----------------------------------- SERVICES --------------------------------//
 
@@ -405,22 +404,38 @@ header {
   .wowza-container {
     display: flex;
     justify-content: right;
-    border-radius: 0px, 36px, 36px, 0px;
   }
 
   //-- wowza! --//
   .wowza-p-container {
-    width: 336px;
+    width: 89.6vw;
+    height: 312.15px;
     background-color: var(--dark-pine);
-    margin-top: 40px;
+    margin-top: 30px;
     outline: 10px solid rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 36px 0 0 36px;
-
     .wowza {
-      width: 270px;
+      width: 235.7px;
+      .quotation-mark-left {
+        position: relative;
+        top: 71px;
+        left: -20px;
+        z-index: 2;
+      }
+      .quote {
+        position: relative;
+        left: 20px;
+      }
+      .quotation-mark-right {
+        transform: rotate(180deg);
+        position: relative;
+        z-index: 2;
+        bottom: 83px;
+        left: 25px;
+      }
     }
   }
 
@@ -438,10 +453,21 @@ header {
     }
   }
 
+  .arrow-4-container {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    bottom: 49px;
+    left: -10px;
+    max-width: 375px;
+  }
+
   //-- SERVICES --//
 
   .services-heading {
-    margin-top: 40px;
     width: 335px;
     height: 281px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -449,50 +475,140 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 0 36px 100px 0;
+    position: relative;
+    bottom: 221px;
+    z-index: 2;
+    .services-italic {
+      position: relative;
+      right: 12px;
+    }
+  }
+  .services-heading-curve {
+    background-color: var(--burnt-yellow);
+    border-radius: 0 0 100px 0;
+    z-index: 1;
+    height: 100px;
+    width: 100vw;
+    position: relative;
+    bottom: 290px;
   }
 
-  .services-text {
-    height: 400px;
+  .services-curves-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    align-items: start;
+
+    .services-curve {
+      position: relative;
+      top: -300px;
+      margin-left: 0;
+      transform: rotate(180deg);
+    }
+    .services-curve-light {
+      position: relative;
+      bottom: 457px;
+      margin-right: 0;
+      transform: rotate(180deg);
+    }
   }
 
-  .services-text-first-part,
-  .services-text-second-part {
-    width: 375px;
+  .services-text-container {
+    width: 100vw;
+    height: 570px;
     background-color: var(--mint-condition);
-    padding: 0 52px;
-    font-family: "Inter", sans-serif;
-    color: var(--dark-pine);
-    font-weight: 500;
-    align-self: center;
-    font-size: 1.125rem;
-    line-height: 1.361rem;
-  }
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 650px;
+    z-index: 0;
 
-  .services-text-first-part {
-    padding-top: 80px;
-    padding-bottom: 30px;
-  }
+    .services-text-first-part,
+    .services-text-second-part {
+      width: 258px;
+      height: auto;
+      bottom: -150px;
+      font-family: "Inter", sans-serif;
+      color: var(--dark-pine);
+      font-weight: 500;
+      align-self: center;
+      font-size: 1.125rem;
+      line-height: 26px;
+      position: relative;
+      letter-spacing: -0.4px;
+    }
 
-  .services-text-second-part {
-    padding-bottom: 100px;
-  }
+    .services-text-first-part {
+      bottom: -170px;
+    }
 
+    .services-text-second-part {
+      bottom: -200px;
+    }
+  }
   .services-curve {
     position: relative;
     top: -90px;
     height: 135px;
   }
 
+  .services-paragraph-curve {
+    background-color: var(--burnt-yellow);
+    border-radius: 0 100px 0 0;
+    z-index: 2;
+    height: 100px;
+    width: 100vw;
+    position: relative;
+    bottom: 906.5px;
+  }
+
+  .services-paragraph-curve-mint {
+    background-color: var(--mint-condition);
+    z-index: 1;
+    height: 100px;
+    width: 100vw;
+    position: relative;
+    bottom: 1020px;
+  }
+
+  .services-curves-container-2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    z-index: 4;
+    align-items: start;
+
+    .services-curve-2 {
+      position: relative;
+      top: -785px;
+      transform: rotate(90deg);
+      z-index: 5;
+      left: -20px;
+    }
+    .services-curve-2-mint {
+      position: relative;
+      bottom: 897px;
+      transform: rotate(90deg);
+      z-index: 6;
+      left: -47px;
+    }
+  }
+
   .services-circles {
-    width: 375px;
+    width: 100vw;
     background-color: var(--mint-condition);
     border-radius: 0 100px 100px 0;
-    border-right: 10px solid var(--burnt-yellow);
-    outline: 30px solid var(--burnt-yellow);
+    border-right: 11px solid var(--burnt-yellow);
     padding-bottom: 90px;
     display: flex;
     flex-direction: column;
     gap: 50px;
+    position: relative;
+    bottom: 1078px;
+    z-index: 2;
+
     .services-ellipse-1,
     .services-ellipse-2,
     .services-ellipse-3 {
@@ -516,15 +632,56 @@ header {
   }
 }
 
-//----------------------------------- MIDDLE-SECTION --------------------------------//
-.middle-section {
-  background-color: var(--burnt-yellow);
-}
-
 //----------------------------------- REVIEWS --------------------------------//
 .reviews {
   background-color: var(--burnt-yellow);
   color: var(--mint-condition);
+  padding-bottom: 70px;
+  border-bottom: 50px solid rgba(255, 255, 255, 0.5);
+
+  .first-review-container,
+  .second-review-container {
+    display: flex;
+  }
+
+  .first-review-container {
+    height: 292px;
+    justify-content: right;
+
+    .first-review-p-container {
+      width: 336px;
+      background-color: var(--dark-pine);
+      margin-top: 40px;
+      outline: 10px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 36px 0 0 36px;
+    }
+
+    p {
+      
+    }
+  }
+
+  .second-review-container {
+    height: 383px;
+    justify-content: left;
+
+    .second-review-p-container {
+      width: 336px;
+      background-color: var(--dark-pine);
+      margin-top: 40px;
+      outline: 10px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 36px 36px 0;
+    }
+  }
+
+  
+
 }
 
 //----------------------------------- CONTACT --------------------------------//
