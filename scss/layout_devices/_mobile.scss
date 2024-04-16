@@ -121,6 +121,10 @@ button {
   text-decoration: underline;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 // Till måndag: jag tror att man måste lägga till en klass i JS när knappen klickas på
 // dvs hämta knappen till JS, skriv funktion som lägger till klassen t ex primary-btn-clicked
 // med klickevent för att kunna ändra styling när den klickas på
@@ -140,14 +144,14 @@ button {
   align-items: center;
   
 
-  .coockie-img {
+  .cookie-img {
     width: 118px;
     height: auto;
     position: relative;
     top: 40px;
   }
 
-  .coockie-text-btn {
+  .cookie-container {
     background-color: var(--flamingo);
     color: var(--mint-condition);
     display: flex;
@@ -165,6 +169,7 @@ button {
     }
 
     button {
+      background-color: var(--salmon);
       margin-top: 20px;
       margin-bottom: 45px;
       width: 177px;
