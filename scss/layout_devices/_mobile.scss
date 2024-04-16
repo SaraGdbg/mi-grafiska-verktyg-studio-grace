@@ -47,12 +47,14 @@ p {
   font-weight: 900;
   font-style: italic;
   color: var(--mint-condition);
+  letter-spacing: -0.8px;
+  line-height: 32px;
 }
 
 .quotation-mark-left,
 .quotation-mark-right {
   color: var(--mint-condition);
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 116px;
   letter-spacing: -0.8px;
@@ -170,7 +172,7 @@ header {
   position: relative;
   bottom: 285px;
   max-width: 330px;
-  
+
   .arrow-1 {
     width: 100%;
     max-height: 118px;
@@ -233,7 +235,6 @@ header {
     margin-top: 40px;
     position: relative;
     bottom: 530px;
-    
 
     .soft-couch {
       position: relative;
@@ -368,7 +369,7 @@ header {
       z-index: 3;
       position: relative;
       bottom: 255px;
-      left: 92px
+      left: 92px;
     }
   }
 
@@ -377,7 +378,7 @@ header {
     bottom: 195px;
   }
 
-  .arrow-3-container{
+  .arrow-3-container {
     width: 100%;
     position: relative;
     z-index: 2;
@@ -385,11 +386,9 @@ header {
     flex-direction: column;
     align-items: center;
     bottom: 306px;
-    align-items: end;
+    left: 4px;
   }
 }
-
-
 
 //----------------------------------- SERVICES --------------------------------//
 
@@ -410,17 +409,34 @@ header {
 
   //-- wowza! --//
   .wowza-p-container {
-    width: 336px;
+    width: 89.6vw;
+    height: 312.15px;
     background-color: var(--dark-pine);
-    margin-top: 40px;
+    margin-top: 30px;
     outline: 10px solid rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 36px 0 0 36px;
-
     .wowza {
-      width: 270px;
+      width: 235.7px;
+      .quotation-mark-left {
+        position: relative;
+        top: 71px;
+        left: -20px;
+        z-index: 2;
+      }
+      .quote {
+        position: relative;
+        left: 20px;
+      }
+      .quotation-mark-right {
+        transform: rotate(180deg);
+        position: relative;
+        z-index: 2;
+        bottom: 83px;
+        left: 25px;
+      }
     }
   }
 
@@ -449,6 +465,11 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 0 36px 100px 0;
+
+    .services-italic {
+      position: relative;
+      right: 12px;
+    }
   }
 
   .services-text {
