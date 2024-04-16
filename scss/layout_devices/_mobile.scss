@@ -125,6 +125,49 @@ button {
 // dvs hämta knappen till JS, skriv funktion som lägger till klassen t ex primary-btn-clicked
 // med klickevent för att kunna ändra styling när den klickas på
 
+
+//----------------------------------- COOKIE-BAR --------------------------------//
+
+.cookie-bar {
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .coockie-img {
+    width: 118px;
+    height: auto;
+  }
+
+  .coockie-text-btn {
+    background-color: var(--flamingo);
+    color: var(--mint-condition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    p {
+      text-align: center;
+      line-height: 22px;
+      letter-spacing: -0.8px;
+      width: 272px;
+      margin-top: 47px;
+    }
+
+    button {
+      margin-top: 20px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+
 //----------------------------------- HEADER --------------------------------//
 header {
   height: 567px;
@@ -679,10 +722,6 @@ header {
       justify-content: center;
       align-items: center;
       border-radius: 36px 0 0 36px;
-    }
-
-    p {
-      
     }
   }
 
