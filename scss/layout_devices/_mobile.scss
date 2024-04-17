@@ -2,15 +2,11 @@
 
 body {
   font-family: "Inter", sans-serif;
-  height: auto;
-  
 }
 
 main {
   background-color: var(--mint-condition);
   width: 100vw;
-  display: block;
-  height: auto;
 }
 
 h2 {
@@ -691,10 +687,14 @@ header {
 .reviews {
   background-color: var(--burnt-yellow);
   color: var(--mint-condition);
-  padding-bottom: 70px;
-  border-bottom: 50px solid rgba(255, 255, 255, 0.5);
   position: relative;
   bottom: 1775px;
+
+  .border-bottom-over-contact {
+    border-bottom: 50px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    bottom: 150px;
+  }
 
   .first-review-container,
   .second-review-container {
@@ -771,6 +771,18 @@ header {
       left: -7px;
     }
   }
+
+  .arrow-6-container {
+    width: 100%;
+    position: relative;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 10px;
+    bottom: 20px;
+    max-width: 375px;
+  }
 }
 
 //----------------------------------- CONTACT --------------------------------//
@@ -779,7 +791,7 @@ header {
   background-color: var(--burnt-yellow);
   color: var(--dark-pine);
   position: relative;
-  bottom: 1775.5px;
+  bottom: 1925px;
   height: 390px;
 
   .contact-content {
@@ -847,7 +859,8 @@ footer {
   color: var(--mint-condition);
   padding: 95px 0 0 0;
   position: relative;
-  bottom: 1775.25px;
+  bottom: 1925px;
+  height: 1042px;
 }
 
 .footer-logo-container {
@@ -955,6 +968,8 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-bottom: 42px;
+  position: relative;
+  bottom: 145px;
 
   p {
     font-size: 0.875rem;
