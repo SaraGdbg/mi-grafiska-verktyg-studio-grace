@@ -18,10 +18,11 @@ menuLinks.innerHTML = `
 `;
 
 // Create the close menu icon
-const closeMenuIcon = document.createElement('img');
-closeMenuIcon.src = './assets/menu/close-menu-svg.png';
-closeMenuIcon.setAttribute('width', '35');
-closeMenuIcon.setAttribute('height', '35');
+
+const closeMenuIcon = document.createElement('span');
+closeMenuIcon.classList.add('material-symbols-rounded')
+closeMenuIcon.innerHTML = 'close'
+
 
 // Create the open menu
 const openMenu = document.createElement('div');
@@ -29,6 +30,14 @@ openMenu.className = 'open-menu hidden';
 openMenu.appendChild(menuLinks);
 openMenu.appendChild(closeMenuIcon);
 document.body.appendChild(openMenu);
+
+// Add new menu icon to top right corner
+const scrollMenu = document.createElement('img');
+scrollMenu.src = './assets/menu/scroll-menu.png';
+scrollMenu.setAttribute('width', '35')
+scrollMenu.setAttribute('height', '35')
+scrollMenu.classList.add('scroll-menu', 'hidden');
+document.body.appendChild(scrollMenu);
 
 // Event listeners for the open and close menu icons
 menuButton.addEventListener('click', () => {
@@ -39,7 +48,23 @@ closeMenuIcon.addEventListener('click', () => {
   openMenu.classList.add('hidden');
 });
 
+scrollMenu.addEventListener('click', () => {
+  openMenu.classList.remove('hidden');
+  scrollMenu.classList.add('hidden')
+});
+
+window.addEventListener('scroll', () => {
+  const menuButtonRect = menuButton.getBoundingClientRect();
+  if (menuButtonRect.bottom < 0 && openMenu.classList.contains('hidden')) {
+    scrollMenu.classList.remove('hidden');
+  } else {
+    scrollMenu.classList.add('hidden');
+  }
+});
+
+
 //--------------------------------------------------- COOKIES -----------------------------------------------------------//
+
 
 const cookieBtn = document.getElementById('cookieBtn');
 const cookieBar = document.getElementById('cookieBar');
@@ -50,16 +75,14 @@ cookieBtn.addEventListener('click', function () {
   cookieBar.classList.add('hidden');
 });
 
-//--------------------------------------------------- BUTTONS CLICKED -----------------------------------------------------------//
 
-// const commissionsBtn = document.getElementById('commissionsBtn');
-// const contactBtn = document.getElementById('contactBtn');
-// const newsletterBtn = document.getElementById('newsletterBtn');
+
 
 //--------------------------------------------------- LAMP -----------------------------------------------------------//
 
 const lampSVG = document.querySelector('#lampSVG');
 const lamp = document.getElementById('lampRay');
+
 let intervalId;
 
 lampSVG.addEventListener('click', () => {
