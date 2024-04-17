@@ -179,7 +179,8 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: var(--salmon);
-  opacity: 80%;
+  opacity: 95%;
+  backdrop-filter: blur(70px);
   z-index: 4;
 
   img {
