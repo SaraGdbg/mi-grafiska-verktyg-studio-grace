@@ -51,7 +51,7 @@ scrollMenu.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
   const menuButtonRect = menuButton.getBoundingClientRect();
-  if (menuButtonRect.top < 0 && openMenu.classList.contains('hidden')) {
+  if (menuButtonRect.bottom < 0 && openMenu.classList.contains('hidden')) {
     scrollMenu.classList.remove('hidden');
   } else {
     scrollMenu.classList.add('hidden');
@@ -67,6 +67,7 @@ cookieBtn.addEventListener('click', function() {
     cookieBar.classList.add('hidden');
 });
 
+// Lamp 
 const lampSVG = document.querySelector("#lampSVG");
 const lamp = document.getElementById("lampRay");
 let intervalId;
