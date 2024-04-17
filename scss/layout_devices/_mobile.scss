@@ -6,7 +6,6 @@ body {
 
 main {
   background-color: var(--mint-condition);
-  height: 8086px;
   width: 100vw;
 }
 
@@ -512,12 +511,12 @@ header {
 
 .services {
   background-color: var(--burnt-yellow);
-  border-radius: 0 0 100px 0;
   display: flex;
   flex-direction: column;
   position: relative;
   bottom: 387.5px;
   border-top: 10px solid rgba(255, 255, 255, 0.5);
+ 
 
   .wowza-container {
     display: flex;
@@ -537,7 +536,7 @@ header {
     border-radius: 36px 0 0 36px;
     .wowza {
       width: 235.7px;
-      .quotation-mark-left {
+      .services-quotation-mark-left {
         position: relative;
         top: 71px;
         left: -20px;
@@ -547,7 +546,7 @@ header {
         position: relative;
         left: 20px;
       }
-      .quotation-mark-right {
+      .services-quotation-mark-right {
         transform: rotate(180deg);
         position: relative;
         z-index: 2;
@@ -748,14 +747,50 @@ header {
       right: 10px;
     }
   }
+
+  .services-bottom-curve-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: start;
+    position: relative;
+    top: -1079px;
+    left: -41.5px;
+
+
+    .services-bottom-curve {
+      margin-left: 0;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.arrow-5-container {
+  width: 100%;
+  position: relative;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 1675px;
+  left: -10px;
+  max-width: 375px;
 }
 
 //----------------------------------- REVIEWS --------------------------------//
+
 .reviews {
   background-color: var(--burnt-yellow);
   color: var(--mint-condition);
-  padding-bottom: 70px;
-  border-bottom: 50px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  bottom: 1775px;
+
+  .border-bottom-over-contact {
+    border-bottom: 50px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    bottom: 150px;
+  }
 
   .first-review-container,
   .second-review-container {
@@ -763,11 +798,11 @@ header {
   }
 
   .first-review-container {
-    height: 292px;
     justify-content: right;
 
     .first-review-p-container {
-      width: 336px;
+      width: 87vw;
+      height: 292px;
       background-color: var(--dark-pine);
       margin-top: 40px;
       outline: 10px solid rgba(255, 255, 255, 0.5);
@@ -776,10 +811,31 @@ header {
       align-items: center;
       border-radius: 36px 0 0 36px;
     }
+
+
+    .review-1-quotation-mark-left {
+      position: relative;
+      top: -90px;
+      left: 13px;
+      z-index: 2;
+    }
+    .quote {
+      position: relative;
+      left: 20px;
+      width: 260px;
+    }
+    .review-1-quotation-mark-right {
+      transform: rotate(180deg);
+      position: relative;
+      z-index: 2;
+      bottom: -88px;
+      left: -4px;
+    }
+
   }
 
   .second-review-container {
-    height: 383px;
+    height: 420px;
     justify-content: left;
 
     .second-review-p-container {
@@ -792,13 +848,50 @@ header {
       align-items: center;
       border-radius: 0 36px 36px 0;
     }
+
+    .review-2-quotation-mark-left {
+      position: relative;
+      top: -135px;
+      left: 10px;
+      z-index: 2;
+    }
+    .quote {
+      position: relative;
+      left: 20px;
+      width: 260px;
+      height: 277px;
+    }
+    .review-2-quotation-mark-right {
+      transform: rotate(180deg);
+      position: relative;
+      z-index: 2;
+      bottom: -133px;
+      left: -7px;
+    }
+  }
+
+  .arrow-6-container {
+    width: 100%;
+    position: relative;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 10px;
+    bottom: 20px;
+    max-width: 375px;
+
   }
 }
 
 //----------------------------------- CONTACT --------------------------------//
+
 .contact {
   background-color: var(--burnt-yellow);
   color: var(--dark-pine);
+  position: relative;
+  bottom: 1925px;
+  height: 390px;
 
   .contact-content {
     display: flex;
@@ -883,13 +976,13 @@ header {
       position: relative;
       bottom: 130px;
     }
-  
+
     input::placeholder {
-      text-indent: 10px; 
+      text-indent: 10px;
       font-weight: bold;
       color: var(--dark-pine);
     }
-  
+
     button {
       background-color: var(--flamingo);
       margin-bottom: 50px;
@@ -899,12 +992,15 @@ header {
   }
 }
 
-
 //----------------------------------- FOOTER --------------------------------//
+
 footer {
   background-color: var(--dark-pine);
   color: var(--mint-condition);
   padding: 95px 0 0 0;
+  position: relative;
+  bottom: 1925px;
+  height: 1042px;
 }
 
 .footer-logo-container {
@@ -993,15 +1089,14 @@ footer {
       border-radius: 16px;
       height: 40px;
       width: 286px;
-      
     }
-  
+
     input::placeholder {
-      text-indent: 10px; 
+      text-indent: 10px;
       font-weight: bold;
       color: var(--mint-condition);
     }
-  
+
     button {
       align-self: center;
     }
@@ -1013,7 +1108,9 @@ footer {
   flex-direction: column;
   align-items: center;
   padding-bottom: 42px;
-  
+  position: relative;
+  bottom: 145px;
+
   p {
     font-size: 0.875rem;
     color: var(--mint-condition);
