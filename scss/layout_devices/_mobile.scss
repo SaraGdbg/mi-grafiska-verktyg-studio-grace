@@ -2,11 +2,15 @@
 
 body {
   font-family: "Inter", sans-serif;
+  height: auto;
+  
 }
 
 main {
   background-color: var(--mint-condition);
   width: 100vw;
+  display: block;
+  height: auto;
 }
 
 h2 {
@@ -415,12 +419,12 @@ header {
 
 .services {
   background-color: var(--burnt-yellow);
-  border-radius: 0 0 100px 0;
   display: flex;
   flex-direction: column;
   position: relative;
   bottom: 387.5px;
   border-top: 10px solid rgba(255, 255, 255, 0.5);
+ 
 
   .wowza-container {
     display: flex;
@@ -600,7 +604,6 @@ header {
     margin-left: 0;
     z-index: 4;
     align-items: start;
-    overflow: hidden;
 
     .services-curve-2 {
       position: relative;
@@ -657,13 +660,14 @@ header {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    z-index: 8;
+    z-index: 2;
     align-items: start;
+    position: relative;
+    top: -1079px;
+    left: -41.5px;
+
 
     .services-bottom-curve {
-      position: relative;
-      top: -1079px;
-      left: -29px;
       margin-left: 0;
       transform: rotate(180deg);
     }
@@ -775,7 +779,8 @@ header {
   background-color: var(--burnt-yellow);
   color: var(--dark-pine);
   position: relative;
-  bottom: 1400px;
+  bottom: 1775.5px;
+  height: 390px;
 
   .contact-content {
     display: flex;
@@ -842,7 +847,7 @@ footer {
   color: var(--mint-condition);
   padding: 95px 0 0 0;
   position: relative;
-  bottom: 1400px;
+  bottom: 1775.25px;
 }
 
 .footer-logo-container {
