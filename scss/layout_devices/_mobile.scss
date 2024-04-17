@@ -213,9 +213,51 @@ header {
       top: 288px;
       left: 206px;
       position: absolute;
+      transition: transform 800ms ease;
+    }
+
+    .menu-closed:hover {
+      transform: rotate(-15deg) scale(1.05);
     }
   }
 }
+
+.open-menu.hidden {
+  display: none;
+}
+
+.open-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--salmon);
+  opacity: 95%;
+  backdrop-filter: blur(70px);
+  z-index: 4;
+
+  img {
+    position: absolute;
+    right: 0;
+    margin: 25px;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .hyperlink {
+      color: var(--dark-pine);
+      padding: 10px;
+      text-align: center;
+    }
+  }
+}
+
 
 //----------------------------------- FIRST-SECTION --------------------------------//
 .sf-curves-container {
@@ -751,9 +793,6 @@ header {
       border-radius: 0 36px 36px 0;
     }
   }
-
-  
-
 }
 
 //----------------------------------- CONTACT --------------------------------//
@@ -858,15 +897,7 @@ header {
       bottom: 160px;
     }
   }
-
-  
-  
-  
-  
 }
-
-
-
 
 
 //----------------------------------- FOOTER --------------------------------//
