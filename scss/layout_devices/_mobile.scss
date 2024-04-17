@@ -680,10 +680,6 @@ header {
       align-items: center;
       border-radius: 36px 0 0 36px;
     }
-
-    p {
-      
-    }
   }
 
   .second-review-container {
@@ -739,6 +735,46 @@ header {
     left: 111px;
   }
 
+  #lampSVG {
+    cursor: pointer;
+  }
+  
+  @keyframes turnOnBlink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes turnOn {
+    0%,
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes turnOff {
+    0%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #lampRay {
+    animation: turnOff 1s forwards;
+  }
+  
+  #lampRay.lampOn {
+    animation: turnOn 1s forwards;
+  }
+  #lampRay.lampOn.blinking {
+    animation: turnOnBlink 0.5s infinite;
+  }
+  
+
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -758,6 +794,7 @@ header {
     input::placeholder {
       text-indent: 10px; 
       font-weight: bold;
+      color: var(--dark-pine);
     }
   
     button {
