@@ -1,7 +1,7 @@
-@import "../variables/variables";
+@import '../variables/variables';
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 main {
@@ -85,6 +85,10 @@ button {
   background-color: var(--flamingo);
 }
 
+.primary-btn:active {
+  box-shadow: 0 var(--onyx);
+}
+
 .secondary-btn {
   background-color: var(--flamingo);
 }
@@ -93,13 +97,22 @@ button {
   background-color: var(--salmon);
 }
 
-.clicked-primary-btn {
-  // Or try box-shadow: none, if needed
-  box-shadow: 0 0 var(--onyx);
+.secondary-btn:active {
+  box-shadow: 0 var(--onyx);
 }
 
-.clicked-secondary-btn {
-  box-shadow: 0 0 var(--onyx);
+.cookie-btn {
+  background-color: var(--salmon);
+  width: 177px;
+  height: 44px;
+}
+
+.cookie-btn:hover {
+  background-color: var(--flamingo);
+}
+
+.cookie-btn:active {
+  box-shadow: 0 var(--onyx);
 }
 
 .hyperlink {
@@ -127,16 +140,14 @@ button {
 //----------------------------------- COOKIE-BAR --------------------------------//
 
 .cookie-bar {
-
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100vw;
-  z-index: 9999; 
+  z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 
   .cookie-img {
     width: 118px;
@@ -163,11 +174,8 @@ button {
     }
 
     button {
-      background-color: var(--salmon);
       margin-top: 20px;
       margin-bottom: 45px;
-      width: 177px;
-      height: 44px;
     }
   }
 }
@@ -179,7 +187,7 @@ header {
   width: 100vw;
   overflow: hidden;
   .background-image {
-    background-image: url("/assets/background-header/background-header.png");
+    background-image: url('/assets/background-header/background-header.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: -505px 0;
@@ -397,7 +405,7 @@ header {
   bottom: 387.5px;
 
   .background-pattern-commission {
-    background-image: url("/assets/background-pattern/boxpattern.png");
+    background-image: url('/assets/background-pattern/boxpattern.png');
     background-repeat: repeat;
     background-size: 87px;
     width: 100vw;
@@ -507,7 +515,6 @@ header {
   position: relative;
   bottom: 387.5px;
   border-top: 10px solid rgba(255, 255, 255, 0.5);
- 
 
   .wowza-container {
     display: flex;
@@ -637,7 +644,7 @@ header {
       width: 258px;
       height: auto;
       bottom: -150px;
-      font-family: "Inter", sans-serif;
+      font-family: 'Inter', sans-serif;
       color: var(--dark-pine);
       font-weight: 500;
       align-self: center;
@@ -749,7 +756,6 @@ header {
     top: -1079px;
     left: -41.5px;
 
-
     .services-bottom-curve {
       margin-left: 0;
       transform: rotate(180deg);
@@ -821,7 +827,6 @@ header {
       bottom: -88px;
       left: -4px;
     }
-
   }
 
   .second-review-container {
@@ -870,7 +875,6 @@ header {
     bottom: 20px;
     max-width: 375px;
     left: -24px;
-
   }
 }
 
@@ -890,7 +894,7 @@ header {
   }
 
   .background-pattern-commission {
-    background-image: url("/assets/background-pattern/boxpattern.png");
+    background-image: url('/assets/background-pattern/boxpattern.png');
     background-repeat: repeat;
     background-size: 87px;
     width: 100vw;
@@ -914,7 +918,7 @@ header {
   #lampSVG {
     cursor: pointer;
   }
-  
+
   @keyframes turnOnBlink {
     0%,
     100% {
@@ -924,32 +928,31 @@ header {
       opacity: 0;
     }
   }
-  
+
   @keyframes turnOn {
     0%,
     100% {
       opacity: 1;
     }
   }
-  
+
   @keyframes turnOff {
     0%,
     100% {
       opacity: 0;
     }
   }
-  
+
   #lampRay {
     animation: turnOff 1s forwards;
   }
-  
+
   #lampRay.lampOn {
     animation: turnOn 1s forwards;
   }
   #lampRay.lampOn.blinking {
     animation: turnOnBlink 0.5s infinite;
   }
-  
 
   .contact-form {
     display: flex;
