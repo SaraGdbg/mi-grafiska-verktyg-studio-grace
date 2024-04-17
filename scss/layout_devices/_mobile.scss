@@ -236,10 +236,12 @@ header {
   backdrop-filter: blur(70px);
   z-index: 4;
 
-  img {
+  span {
     position: absolute;
     right: 0;
-    margin: 25px;
+    margin: 15px;
+    font-size: 50px;
+    color: var(--dark-pine);
   }
 
   .menu-links {
@@ -255,6 +257,15 @@ header {
       text-align: center;
     }
   }
+}
+
+.scroll-menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  z-index: 9;
 }
 
 
