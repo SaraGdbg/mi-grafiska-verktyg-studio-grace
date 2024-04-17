@@ -124,11 +124,6 @@ button {
   visibility: hidden;
 }
 
-// Till måndag: jag tror att man måste lägga till en klass i JS när knappen klickas på
-// dvs hämta knappen till JS, skriv funktion som lägger till klassen t ex primary-btn-clicked
-// med klickevent för att kunna ändra styling när den klickas på
-
-
 //----------------------------------- COOKIE-BAR --------------------------------//
 
 .cookie-bar {
@@ -136,7 +131,7 @@ button {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 9999; 
   display: flex;
   flex-direction: column;
@@ -177,8 +172,8 @@ button {
   }
 }
 
-
 //----------------------------------- HEADER --------------------------------//
+
 header {
   height: 567px;
   width: 100vw;
@@ -228,7 +223,6 @@ header {
 .open-menu {
   position: fixed;
   top: 0;
-  right: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--salmon);
@@ -257,8 +251,8 @@ header {
   }
 }
 
-
 //----------------------------------- FIRST-SECTION --------------------------------//
+
 .sf-curves-container {
   width: 100vw;
   display: flex;
@@ -407,8 +401,6 @@ header {
     background-repeat: repeat;
     background-size: 87px;
     width: 100vw;
-    // Kommenterat ut för att få bilderna att funka, ändra färg på mönstret istället?
-    //opacity: 50%;
     display: flex;
     justify-content: center;
     .dark-green-box {
@@ -439,8 +431,6 @@ header {
   }
   .commissions-imgs {
     img {
-      // Funkar inte!
-      //opacity: 1 !important;
       position: relative;
       bottom: 205px;
     }
@@ -490,9 +480,10 @@ header {
     }
   }
 
-  .show-more-btn {
+  button {
     position: relative;
     bottom: 195px;
+    z-index: 4;
   }
 
   .arrow-3-container {
@@ -812,7 +803,6 @@ header {
       border-radius: 36px 0 0 36px;
     }
 
-
     .review-1-quotation-mark-left {
       position: relative;
       top: -90px;
@@ -876,10 +866,10 @@ header {
     z-index: 8;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    left: 10px;
+    align-items: end;
     bottom: 20px;
     max-width: 375px;
+    left: -24px;
 
   }
 }
@@ -984,7 +974,6 @@ header {
     }
 
     button {
-      background-color: var(--flamingo);
       margin-bottom: 50px;
       position: relative;
       bottom: 160px;
@@ -1117,7 +1106,3 @@ footer {
     opacity: 70%;
   }
 }
-
-//----------------------------------- COOKIE-BAR --------------------------------//
-
-//----------------------------------- OPEN-MENU --------------------------------//
