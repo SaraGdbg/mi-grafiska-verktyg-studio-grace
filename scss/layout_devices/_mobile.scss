@@ -168,6 +168,10 @@ header {
   }
 }
 
+.open-menu.hidden {
+  display: none;
+}
+
 .open-menu {
   position: fixed;
   top: 0;
@@ -177,21 +181,28 @@ header {
   background-color: var(--salmon);
   opacity: 80%;
   z-index: 4;
-}
 
-.menu-links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  .hyperlink {
-    color: var(--dark-pine);
-    padding: 10px;
-    text-align: center;
+  img {
+    position: absolute;
+    right: 0;
+    margin: 25px;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .hyperlink {
+      color: var(--dark-pine);
+      padding: 10px;
+      text-align: center;
+    }
   }
 }
+
 
 //----------------------------------- FIRST-SECTION --------------------------------//
 .sf-curves-container {
