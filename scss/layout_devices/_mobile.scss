@@ -121,9 +121,63 @@ button {
   text-decoration: underline;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 // Till måndag: jag tror att man måste lägga till en klass i JS när knappen klickas på
 // dvs hämta knappen till JS, skriv funktion som lägger till klassen t ex primary-btn-clicked
 // med klickevent för att kunna ändra styling när den klickas på
+
+
+//----------------------------------- COOKIE-BAR --------------------------------//
+
+.cookie-bar {
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  .cookie-img {
+    width: 118px;
+    height: auto;
+    position: relative;
+    top: 40px;
+  }
+
+  .cookie-container {
+    background-color: var(--flamingo);
+    color: var(--mint-condition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 0 8px 8px 0;
+
+    p {
+      text-align: center;
+      line-height: 22px;
+      letter-spacing: -0.8px;
+      width: 272px;
+      margin-top: 47px;
+    }
+
+    button {
+      background-color: var(--salmon);
+      margin-top: 20px;
+      margin-bottom: 45px;
+      width: 177px;
+      height: 44px;
+    }
+  }
+}
+
 
 //----------------------------------- HEADER --------------------------------//
 header {
@@ -774,6 +828,46 @@ header {
     left: 111px;
   }
 
+  #lampSVG {
+    cursor: pointer;
+  }
+  
+  @keyframes turnOnBlink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes turnOn {
+    0%,
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes turnOff {
+    0%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #lampRay {
+    animation: turnOff 1s forwards;
+  }
+  
+  #lampRay.lampOn {
+    animation: turnOn 1s forwards;
+  }
+  #lampRay.lampOn.blinking {
+    animation: turnOnBlink 0.5s infinite;
+  }
+  
+
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -793,6 +887,7 @@ header {
     input::placeholder {
       text-indent: 10px; 
       font-weight: bold;
+      color: var(--dark-pine);
     }
   
     button {
